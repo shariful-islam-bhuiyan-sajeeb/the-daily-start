@@ -45,7 +45,7 @@ const displayNews = (allNews, category) => {
     const newsCount = document.getElementById('news-count');
     let count = 0;
 
-    //-----------sort news  view...
+    //-----------Sort News View...
     allNews.sort((a, b) => {
         return b.total_view - a.total_view;
     })
@@ -87,7 +87,7 @@ const displayNews = (allNews, category) => {
     })
 
 
-    //---------------Update category
+    //---------------Update Category
     let categoryName;
     fetch('https://openapi.programming-hero.com/api/news/categories')
         .then(res => res.json())
